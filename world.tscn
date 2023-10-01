@@ -1,36 +1,259 @@
-[gd_scene load_steps=3 format=3 uid="uid://ckawmy3sa7njn"]
+[gd_scene load_steps=10 format=3 uid="uid://ckawmy3sa7njn"]
 
+[ext_resource type="Texture2D" uid="uid://b2w2joexoqxdv" path="res://World/DirtTileset.png" id="2_l75mq"]
 [ext_resource type="PackedScene" uid="uid://bb0v4wpaeeiha" path="res://Player/player.tscn" id="2_tfww4"]
 [ext_resource type="PackedScene" uid="uid://c1wb241egbeq1" path="res://World/Bush.tscn" id="2_v4cd3"]
+[ext_resource type="Texture2D" uid="uid://dhun44j2cn58u" path="res://World/CliffTileset.png" id="3_7rppg"]
+[ext_resource type="Texture2D" uid="uid://bkv85j6f1nvpv" path="res://World/GrassBackground.png" id="3_d4a8x"]
+
+[sub_resource type="TileMapPattern" id="TileMapPattern_o02mb"]
+tile_data = PackedInt32Array(0, 0, 0, 65536, 0, 1, 131072, 0, 2, 1, 65536, 0, 65537, 65536, 1, 131073, 65536, 2, 2, 131072, 0, 65538, 131072, 1, 131074, 131072, 2)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kifrp"]
+texture = ExtResource("2_l75mq")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+0:1/0 = 0
+1:1/next_alternative_id = 2
+1:1/0 = 0
+1:1/0/terrain = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+9:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+8:2/0 = 0
+9:2/0 = 0
+10:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+8:3/0 = 0
+9:3/0 = 0
+10:3/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+8:4/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fvqvu"]
+texture = ExtResource("3_7rppg")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+10:0/0 = 0
+11:0/0 = 0
+12:0/0 = 0
+13:0/0 = 0
+14:0/0 = 0
+15:0/0 = 0
+16:0/0 = 0
+17:0/0 = 0
+19:0/0 = 0
+0:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+9:1/0 = 0
+11:1/0 = 0
+12:1/0 = 0
+14:1/0 = 0
+15:1/0 = 0
+16:1/0 = 0
+17:1/0 = 0
+18:1/0 = 0
+0:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+8:2/0 = 0
+15:2/0 = 0
+18:2/0 = 0
+0:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+8:3/0 = 0
+9:3/0 = 0
+11:3/0 = 0
+12:3/0 = 0
+14:3/0 = 0
+15:3/0 = 0
+16:3/0 = 0
+17:3/0 = 0
+19:3/0 = 0
+0:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+8:4/0 = 0
+9:4/0 = 0
+11:4/0 = 0
+12:4/0 = 0
+14:4/0 = 0
+15:4/0 = 0
+16:4/0 = 0
+17:4/0 = 0
+18:4/0 = 0
+19:4/0 = 0
+20:4/0 = 0
+21:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+8:5/0 = 0
+15:5/0 = 0
+18:5/0 = 0
+21:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+8:6/0 = 0
+9:6/0 = 0
+11:6/0 = 0
+12:6/0 = 0
+14:6/0 = 0
+15:6/0 = 0
+16:6/0 = 0
+17:6/0 = 0
+18:6/0 = 0
+21:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+4:7/0 = 0
+5:7/0 = 0
+6:7/0 = 0
+7:7/0 = 0
+8:7/0 = 0
+9:7/0 = 0
+10:7/0 = 0
+11:7/0 = 0
+12:7/0 = 0
+13:7/0 = 0
+14:7/0 = 0
+15:7/0 = 0
+16:7/0 = 0
+17:7/0 = 0
+18:7/0 = 0
+19:7/0 = 0
+20:7/0 = 0
+21:7/0 = 0
+8:8/0 = 0
+9:8/0 = 0
+11:8/0 = 0
+12:8/0 = 0
+14:8/0 = 0
+15:8/0 = 0
+16:8/0 = 0
+17:8/0 = 0
+8:9/0 = 0
+9:9/0 = 0
+11:9/0 = 0
+12:9/0 = 0
+14:9/0 = 0
+15:9/0 = 0
+16:9/0 = 0
+17:9/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_lt1m6"]
+sources/0 = SubResource("TileSetAtlasSource_kifrp")
+sources/1 = SubResource("TileSetAtlasSource_fvqvu")
+pattern_0 = SubResource("TileMapPattern_o02mb")
 
 [node name="World" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+visible = false
+offset_right = 320.0
+offset_bottom = 180.0
+texture = ExtResource("3_d4a8x")
+stretch_mode = 1
+
+[node name="Background" type="Sprite2D" parent="."]
+texture_repeat = 2
+texture = ExtResource("3_d4a8x")
+offset = Vector2(160, 90)
+region_enabled = true
+region_rect = Rect2(2.08165e-12, 2.08165e-12, 320, 180)
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_lt1m6")
+format = 2
+layer_0/tile_data = PackedInt32Array(327686, 0, 1, 393222, 0, 1, 458757, 0, 0, 524293, 0, 1, 589829, 0, 1, 458758, 131072, 1, 524294, 131072, 1, 589830, 131072, 1, 393223, 131072, 2, 327687, 131072, 1, 262151, 65536, 0, 4, 196608, 1, 65540, 196608, 1, 131076, 0, 1, 196612, 0, 2, 131077, 131072, 0, 196613, 65536, 1, 262149, 0, 2, 262150, 65536, 0, 262152, 65536, 3, 262153, 65536, 3, 262154, 65536, 3, 262155, 65536, 3, 262156, 65536, 3, 262157, 65536, 3, 262158, 65536, 3, 262159, 65536, 3, 262160, 65536, 3, 262161, 65536, 3, 262162, 65536, 3, 262163, 65536, 3, 655365, 0, 1, 655366, 131072, 1, 720902, 131072, 1, 720901, 0, 1)
+
+[node name="Node2D" type="Node2D" parent="."]
 y_sort_enabled = true
 
-[node name="Player" parent="." instance=ExtResource("2_tfww4")]
+[node name="Player" parent="Node2D" instance=ExtResource("2_tfww4")]
 position = Vector2(128, 70)
 
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
+[node name="StaticBody2D" type="StaticBody2D" parent="Node2D"]
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Node2D/StaticBody2D"]
 polygon = PackedVector2Array(-1, 1, 26, 22, 78, 14, 111, 30, 182, 16, 187, 32, 246, 23, 290, 33, 306, 69, 293, 156, 269, 166, 140, 161, 87, 164, 26, 161, 10, 84, 25, 23, -6, 12, -12, 117, 8, 195, 119, 205, 296, 199, 339, 150, 335, 34, 278, -9, 197, -19, 62, -15)
 
-[node name="Bush" parent="." instance=ExtResource("2_v4cd3")]
+[node name="Bush" parent="Node2D" instance=ExtResource("2_v4cd3")]
 position = Vector2(46, 33)
 
-[node name="Bush2" parent="." instance=ExtResource("2_v4cd3")]
+[node name="Bush2" parent="Node2D" instance=ExtResource("2_v4cd3")]
 position = Vector2(245, 58)
 
-[node name="Bush3" parent="." instance=ExtResource("2_v4cd3")]
+[node name="Bush3" parent="Node2D" instance=ExtResource("2_v4cd3")]
 position = Vector2(158, 92)
 
-[node name="Bush4" parent="." instance=ExtResource("2_v4cd3")]
+[node name="Bush4" parent="Node2D" instance=ExtResource("2_v4cd3")]
 position = Vector2(67, 113)
 
-[node name="Bush5" parent="." instance=ExtResource("2_v4cd3")]
+[node name="Bush5" parent="Node2D" instance=ExtResource("2_v4cd3")]
 position = Vector2(226, 105)
 
-[node name="Bush6" parent="." instance=ExtResource("2_v4cd3")]
+[node name="Bush6" parent="Node2D" instance=ExtResource("2_v4cd3")]
 position = Vector2(139, 137)
 
-[node name="Bush7" parent="." instance=ExtResource("2_v4cd3")]
+[node name="Bush7" parent="Node2D" instance=ExtResource("2_v4cd3")]
 position = Vector2(138, 38)
